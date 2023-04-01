@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<!-- about.html -->
+      <div class="post">
+        <header class="post-header">
+          <h1 class="post-title">
+           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}<span class="font-weight-bold">{{ site.title }}</span>{%- endif %}
+           <div class="navbar-brand social">
+            {% include social.html %}
+          </div>
+          </h1>
+          <span class="font-weight-bold">
+          <p class="desc">{{ page.subtitle }}</p>
+          </span>
+        </header>
+        
+        
+        <article>
+          {% if page.profile -%}
+          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+            {%- if page.profile.image %}
+              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+
+              {% if page.profile.image_circular %}
+                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+              {% else %}
+                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+              {% endif %}
+
+              {% include figure.html 
+              path=profile_image_path 
+              class=profile_image_class
+              alt=page.profile.image -%}
+            {% endif -%}
+            {%- if page.profile.address %}
+            <div class="address">
+              {{ page.profile.address }}
+            </div>
+            {%- endif %}
+          </div>
+          {%- endif %}
+
+          <div class="clearfix">
+            {{ content }}
+          </div>
+          <picture>
+            <source 
+              srcset="https://github-readme-stats.vercel.app/api?username=VainF&show_icons=true&theme=calm"
+              media="(prefers-color-scheme: dark)"
+              width="50%"
+              min-width="768px"
+            />
+            <source
+              srcset="https://github-readme-stats.vercel.app/api?username=VainF&show_icons=true&theme=calm"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+              width="50%"
+              min-width="768px"
+            />
+            <img src="https://github-readme-stats.vercel.app/api?username=VainF&show_icons=true&theme=calm" width="50%" min-width="768px" />
+            </picture>
+          <br><br>
+          
+          <!-- News -->
+          {% if page.news -%}
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
+            {%- include news.html %}
+          {%- endif %}
+          <br>
+          <!-- Selected papers -->
+          {% if page.selected_papers -%}
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
+            {%- include selected_papers.html %}
+          {%- endif %}
+          <br>
+                    
+          <h2> Education </h2>
+          <div>
+          <p><b>2022.07 - Present</b> - Ph.D. in Electrical and Computer Engineering, National University of Singapore. </p>
+          <p><b>2019.09 - 2022.04</b> - M.Eng. in Computer Science, College of Computer Science and Technology, Zhejiang University. </p> 
+          <p><b>2015.09 - 2019.06</b> - B.S. in Computer Science, College of Computer Science and Technology, Zhejiang University. </p>
+          </div>
+
+          <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=c4c4c4&w=300&t=tt&d=e9S_awRAjYhT5yiVagGNu9ZBArPRwFNiqCcI9jPj4sc&co=ffffff&cmo=5b80aa&cmn=a34747&ct=ffffff"></script>
+
+
+          <!-- Social 
+          {%- if page.social %}
+            <div class="social">
+              <div class="contact-icons">
+                {% include social.html %}
+              </div>
+
+              <div class="contact-note">
+                {{ site.contact_note }}
+              </div>
+              
+            </div>
+          {%- endif %}
+          -->
+        </article>
+
+</div>

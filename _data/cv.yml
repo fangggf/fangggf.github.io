@@ -1,0 +1,47 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Gongfan Fang
+    - name: Languages
+      value: Chinese, English
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Electrical and Computer Engineering
+      institution: National University of Singapore, Singapre
+      year: 2022 - present
+    - title: M.Eng. in Computer Science
+      institution: Zhejiang University, Hangzhou, China
+      year: 2019 - 2022
+    - title: B.S. in Computer Science
+      institution: Zhejiang University, Hangzhou, China
+      year: 2019 - 2022
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/VainF/Torch-Pruning">Torch-Pruning</a>
+      year: 2019 - now
+      description: A general-purpose library for structural network pruning
+    - title: <a href="https://github.com/VainF/Pytorch-MSSSIM">Pytorch-MSSSIM</a>
+      year: 2019 - now
+      description: Fast and differentiable MS-SSIM and SSIM for pytorch
+    - title: <a href="https://github.com/VainF/DeepLabV3Plus-Pytorch">DeepLabV3Plus-Pytorch</a>
+      year: 2019 - 2020
+      description: Pretrained DeepLabv3 and DeepLabv3+ for Pascal VOC & Cityscapes
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Efficient Deep Learning
+      items: 
+        - Efficient Backbones
+        - Efficient Training and Inference
+        - Model Compression (KD, Pruning, Quantization)
+    - title: Generative Models
+      items:
+        - Diffusion
+        - GANs
+
