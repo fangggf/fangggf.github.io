@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper "[Knowledge Amalgamation for Object Detection with Transformers](https://arxiv.org/abs/2203.03187)" Accepted by TIP'23
+One paper "[Knowledge Amalgamation for Object Detection with Transformers](https://arxiv.org/abs/2203.03187)" accepted by TIP'23
