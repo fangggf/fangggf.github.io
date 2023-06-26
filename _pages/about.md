@@ -6,7 +6,7 @@ subtitle: Ph.D. Student |  <a href="http://lv-nus.org/">Learning and Vision Lab<
 
 profile:
   align: right
-  image: avatar.jpeg
+  image: avatar2.png
   image_circular: false # crops the image to make it circular
 
 news: true  # includes a list of news items
