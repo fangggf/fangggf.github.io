@@ -10,7 +10,7 @@ layout: default
             <div class="navbar-brand social">
              {% include social.html %}
            </div>
-           </h1>
+          </h1>
            
           <span class="font-weight-bold">
           <p class="desc">{{ page.subtitle }}</p>
@@ -51,21 +51,22 @@ layout: default
           </div>
           <picture>
             <source 
-              srcset="https://github-readme-stats.vercel.app/api?username=VainF&show_icons=true&theme=calm"
+              srcset="https://github-readme-stats.vercel.app/api?username=vainf&theme=shadow_red&show_icons=true"
               media="(prefers-color-scheme: dark)"
               width="50%"
               min-width="768px"
             />
+
             <source
-              srcset="https://github-readme-stats.vercel.app/api?username=VainF&show_icons=true&theme=calm"
+              srcset="https://github-readme-stats.vercel.app/api?username=vainf&theme=shadow_red&show_icons=true"
               media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
               width="50%"
               min-width="768px"
             />
-            <img src="https://github-readme-stats.vercel.app/api?username=VainF&show_icons=true&theme=calm" width="50%" min-width="768px" />
+            <img src="https://github-readme-stats.vercel.app/api?username=vainf&theme=shadow_red&show_icons=true" width="50%" min-width="768px" />
             </picture>
           <br><br>
-          
+          <br>
           <!-- News -->
           {% if page.news -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
@@ -78,7 +79,7 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
           <br>
-                    
+
           <h2> Education </h2>
           <div>
           <p><b>2022.07 - Present</b> - Ph.D. in Electrical and Computer Engineering, National University of Singapore. </p>
