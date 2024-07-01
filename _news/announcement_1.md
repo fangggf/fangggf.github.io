@@ -1,9 +1,8 @@
 ---
 layout: post
-date: 2023-02-01
+date: 2024-05-01
 inline: true
 related_posts: false
 ---
 
-One paper "[DepGraph: Towards Any Structural Pruning](https://arxiv.org/abs/2301.12900)" accepted by CVPR'23
-
+Released two projects [Learning-to-cache](https://github.com/horseee/learning-to-cache) and [AsyncDiff](https://github.com/czg1225/AsyncDiff) for diffusion model acceleration.
