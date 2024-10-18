@@ -603,7 +603,7 @@ footer.sticky-bottom {
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: 1px var(--global-theme-color);
 
           &:hover {
             border-bottom-style: solid;
@@ -618,7 +618,7 @@ footer.sticky-bottom {
 
         >span.more-authors {
           color: var(--global-text-color-light);
-          border-bottom: 1px dashed var(--global-text-color-light);
+          border-bottom: 1px var(--global-text-color-light);
           cursor: pointer;
 
           &:hover {
