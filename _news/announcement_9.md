@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🚀 **I will be attending NeurIPS 2024 in Vancouver in person and would be delighted to meet you if possible!**
+🚀 **I'll be at NeurIPS 2024 in Vancouver and it would be great to meet up if you're available!**
