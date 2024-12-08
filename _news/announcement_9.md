@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🚀 **I'll be at NeurIPS 2024 in Vancouver and it would be great to meet up if you're available!**
+🚀 **I'll be at NeurIPS 2024 in Vancouver. It would be great to meet up if you're available!**
