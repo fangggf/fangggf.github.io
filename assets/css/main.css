@@ -533,11 +533,11 @@ footer.sticky-bottom {
   margin-top: 0;
 }
 .publications ol.bibliography li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .publications ol.bibliography li .preview {
   width: 100%;
-  min-width: 100px;
+  min-width: 120px;
   max-width: 400px;
   margin-bottom: -0.3rem;
 }
@@ -548,8 +548,8 @@ footer.sticky-bottom {
 .publications ol.bibliography li .abbr abbr {
   display: inline-block;
   background-color: var(--global-theme-color);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .publications ol.bibliography li .abbr abbr a {
   color: white;
