@@ -21,6 +21,6 @@ social: true  # includes social icons at the bottom of the page
 <p> My research focuses on <strong>LLMs, Diffusion and Efficient Generative Models</strong>. My previous work includes Hybrid Reasoning LLM, Efficient LLM, and Fast Diffusion Transformers. I'm also actively contributing to several projects such as <strong><a href="https://github.com/VainF/Torch-Pruning">Torch-Pruning</a></strong>, a top framework for compressing foundation models.</p>
 
 <div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid #234566; margin-top: 15px; margin-bottom: 15px;">
-<strong>I'm currently on the job market and open to both academic and industrial opportunities, please feel free to reach out via email (gongfan at u.nus.edu) if there’s a potential fit.</strong>
+<strong>I'm currently on the job market and open to both academic and industrial opportunities. Please feel free to reach out via email (gongfan at u.nus.edu) if there’s a potential fit.</strong>
 </div>
 
