@@ -10,8 +10,8 @@
   --global-code-bg-color: rgba(238, 238, 238, 0.6666666667);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
-  --global-theme-color: #882142;
-  --global-hover-color: #882142;
+  --global-theme-color: #222222;
+  --global-hover-color: #9b2c2c;
   --global-footer-bg-color: #1C1C1D;
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #ffffff;
@@ -133,7 +133,7 @@ table.table a {
 }
 a:hover,
 table.table a:hover {
-  color: var(--global-theme-color);
+  color: var(--global-hover-color);
   text-decoration: underline;
 }
 a:hover:after :not(.nav-item.dropdown),
@@ -212,7 +212,7 @@ blockquote {
 
 @media (min-width: 128px) {
   .profile {
-    width: 30%;
+    width: 37%;
   }
   .profile .address p {
     display: block;
@@ -533,11 +533,11 @@ footer.sticky-bottom {
   margin-top: 0;
 }
 .publications ol.bibliography li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .publications ol.bibliography li .preview {
   width: 100%;
-  min-width: 100px;
+  min-width: 120px;
   max-width: 400px;
   margin-bottom: -0.3rem;
 }
@@ -548,8 +548,8 @@ footer.sticky-bottom {
 .publications ol.bibliography li .abbr abbr {
   display: inline-block;
   background-color: var(--global-theme-color);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .publications ol.bibliography li .abbr abbr a {
   color: white;
@@ -565,7 +565,7 @@ footer.sticky-bottom {
   font-weight: bolder;
 }
 .publications ol.bibliography li .author a {
-  border-bottom: 1px dashed var(--global-theme-color);
+  border-bottom: 1px var(--global-theme-color);
 }
 .publications ol.bibliography li .author a:hover {
   border-bottom-style: solid;
@@ -577,7 +577,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li .author > span.more-authors {
   color: var(--global-text-color-light);
-  border-bottom: 1px dashed var(--global-text-color-light);
+  border-bottom: 1px var(--global-text-color-light);
   cursor: pointer;
 }
 .publications ol.bibliography li .author > span.more-authors:hover {
