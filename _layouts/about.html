@@ -75,7 +75,15 @@ layout: default
           <br>
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications (<a href="https://scholar.google.com/citations?user=489YZ_kAAAAJ" target="_blank" style="text-decoration: none;">
+              Full List | Citation: 3003
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 533.5 544.3" style="vertical-align: middle; margin-left: 4px;">
+                <path fill="#4285F4" d="M533.5 278.4c0-17.4-1.6-34.1-4.7-50.4H272v95.4h147c-6.4 34.7-25.7 64-54.6 83.6v68h88.2c51.6-47.6 80.9-117.8 80.9-196.6z"/>
+                <path fill="#34A853" d="M272 544.3c73.6 0 135.4-24.3 180.5-66.1l-88.2-68c-24.5 16.4-55.8 26-92.3 26-71 0-131.1-47.9-152.6-112.1h-91.6v70.3c45.4 89.5 137.8 149.9 244.2 149.9z"/>
+                <path fill="#FBBC05" d="M119.4 324.1c-11.2-33.5-11.2-69.6 0-103.1V150.7h-91.6c-37.6 74.4-37.6 162.4 0 236.8l91.6-63.4z"/>
+                <path fill="#EA4335" d="M272 107.7c39.9 0 75.7 13.7 104 40.7l77.7-77.7C407.4 24.6 345.6 0 272 0 165.6 0 73.2 60.4 27.8 149.9l91.6 70.3C140.9 155.6 201 107.7 272 107.7z"/>
+              </svg>
+            </a>)</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
           <br>
