@@ -6,7 +6,7 @@ subtitle: Ph.D. Candidate |  <a href="https://sites.google.com/view/xml-nus">xML
 
 profile:
   align: right
-  image: me.jpeg
+  image: me2.jpg
   image_circular: false # crops the image to make it circular
 
 news: true  # includes a list of news items
