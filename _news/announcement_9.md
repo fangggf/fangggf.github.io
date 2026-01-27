@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-12-18
+date: 2026-01-27
 inline: true
 related_posts: false
 ---
 
-🎵 I'm deeply honored to be awarded the [**2024 ByteDance Scholarship**](https://bytedance-scholarship.myimis.com/scholarship) (10~15 recipients per year). 
+🥤 Three papers [**dParallel**](https://arxiv.org/abs/2509.26488), [**SparseD**](https://arxiv.org/abs/2509.24014) and [**Invisible Safety Threat**]() were accepted by ICLR'26.
