@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-9-18
+date: 2026-05-01
 inline: true
 related_posts: false
 ---
 
-🍺 Three papers [**Thinkless**](https://arxiv.org/abs/2505.13379), [**dKV-Cache**](https://arxiv.org/abs/2505.15781) and [**VeriThinker**](https://arxiv.org/abs/2505.17941) were accepted to NeurIPS'25.
+🍺 Four papers were accepted to ICML'26.
