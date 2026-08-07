@@ -16,8 +16,11 @@ social: true  # includes social icons at the bottom of the page
 
 
 <div style="text-align: justify;">
-<p>Hi there! I'm Gongfan Fang, a final-year Ph.D. candidate at the <a href="https://sites.google.com/view/xml-nus">xML Lab</a>, National University of Singapore, supervised by <a href="https://sites.google.com/site/sitexinchaowang/"><b>Prof. Xinchao Wang</b></a>. I received my B.Eng. (2019) and M.Eng. (2022) from the <a href="https://www.vipazoo.cn/">VIPA Lab</a>, Zhejiang University, advised by <a href="https://person.zju.edu.cn/en/msong"><b>Prof. Mingli Song</b></a>. I will be joining NVIDIA as a Research Scientist later this year.</p>
+<p>
+I'm Gongfan Fang, an incoming Research Scientist at NVIDIA, where I will be working on LLMs. I recently completed my Ph.D. at the <a href="https://sites.google.com/view/xml-nus">xML Lab</a>, National University of Singapore, under the supervision of <a href="https://sites.google.com/site/sitexinchaowang/"><b>Prof. Xinchao Wang</b></a>. Prior to that, I received my B.Eng. (2019) and M.Eng. (2022) from Zhejiang University under the supervision of <a href="https://person.zju.edu.cn/en/msong"><b>Prof. Mingli Song</b></a>.
+</p>
 
-
-<p> I'm currently working on <strong>Efficient Large Language Models and GenAI</strong>, with emphasis on LLM Reasoning, Model Efficiency, and Diffusion Language Models. I'm also the creator and lead developer of <strong><a href="https://github.com/VainF/Torch-Pruning">Torch-Pruning</a></strong>, a top framework for accelerating foundation models, which has been intergated into many industrial products like NVIDIA TAO <a href="https://docs.nvidia.com/tao/tao-toolkit/text/acknowledgements.html#vainf-torch-pruning">(See the ACK)</a>. During my PhD, I previously worked with the amazing <strong><a href="https://nv-dler.github.io/team/">DLER</a></strong> team at NVIDIA. And I was awarded the <strong><a href="https://scholarship.bytedance.com/en/winner/2024">2024 ByteDance Scholarship</a></strong> (10~15 recipients per year). </p>
-
+<p>
+My research focuses on Efficient Deep Learning. I am the creator of <strong><a href="https://github.com/VainF/Torch-Pruning">Torch-Pruning</a></strong>, an open-source framework for structured pruning and acceleration. And I also received the <strong><a href="https://scholarship.bytedance.com/en/winner/all">2024 ByteDance Scholarship</a></strong>.
+</p>
+</div>
