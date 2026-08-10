@@ -15,12 +15,6 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-<div style="text-align: justify;">
-<p>
-I'm Gongfan Fang, an incoming Research Scientist at NVIDIA, where I will be working on LLMs. I recently completed my Ph.D. at the <a href="https://sites.google.com/view/xml-nus">xML Lab</a>, National University of Singapore, under the supervision of <a href="https://sites.google.com/site/sitexinchaowang/"><b>Prof. Xinchao Wang</b></a>. Prior to that, I received my B.Eng. (2019) and M.Eng. (2022) from Zhejiang University under the supervision of <a href="https://person.zju.edu.cn/en/msong"><b>Prof. Mingli Song</b></a>.
-</p>
+<div style="text-align: justify;"> <p> I'm Gongfan Fang, an <strong>incoming Research Scientist at NVIDIA</strong>, where I will be working on LLMs. I recently completed my Ph.D. at the <b><a href="https://sites.google.com/view/xml-nus">xML Lab</a></b>, National University of Singapore, under the supervision of <b><a href="https://sites.google.com/site/sitexinchaowang/">Prof. Xinchao Wang</a></b>. Prior to that, I received my B.Eng. (2019) and M.Eng. (2022) from Zhejiang University under the supervision of <b><a href="https://person.zju.edu.cn/en/msong">Prof. Mingli Song</a></b>. </p>
 
-<p>
-My research focuses on Efficient Deep Learning. I am the creator of <strong><a href="https://github.com/VainF/Torch-Pruning">Torch-Pruning</a></strong>, an open-source framework for structured pruning and acceleration. And I also received the <strong><a href="https://scholarship.bytedance.com/en/winner/all">2024 ByteDance Scholarship</a></strong>.
-</p>
-</div>
+<p> My research focuses on <strong>Efficient Deep Learning</strong>. I am the creator of <b><a href="https://github.com/VainF/Torch-Pruning">Torch-Pruning</a></b>, an open-source framework for structured pruning and acceleration. And I also received the <b><a href="https://scholarship.bytedance.com/en/winner/all">2024 ByteDance Scholarship</a></b>. </p> </div>
