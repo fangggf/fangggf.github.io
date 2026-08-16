@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Ph.D. Candidate |  <a href="https://sites.google.com/view/xml-nus">xML Lab</a>  |  <a href="https://nus.edu.sg/"> National University of Singapore</a>.
+subtitle: Incoming Research Scientist at NVIDIA | Ph.D. at NUS | BSc & MEng at Zhejiang University
 
 profile:
   align: right
