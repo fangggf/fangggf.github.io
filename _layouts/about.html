@@ -1,116 +1,78 @@
 ---
 layout: default
 ---
+<article class="home-page">
+  <section class="intro" id="about" aria-labelledby="intro-title">
+    <header class="intro-heading">
+      <h1 id="intro-title">{{ site.first_name }} {{ site.last_name }}</h1>
+      <p class="intro-role">{{ page.subtitle }}</p>
+    </header>
+    <div class="intro-copy">
+      <div class="intro-text">{{ content }}</div>
+      <nav class="contact-links" aria-label="Contact and profiles">
+        <span class="email-text">{% include contact_icon.html name="email" %}{{ site.email_display }}</span>
+        <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">{% include contact_icon.html name="scholar" %}Google Scholar</a>
+        <a href="https://github.com/{{ site.github_username }}">{% include contact_icon.html name="github" %}GitHub</a>
+        <a href="https://sg.linkedin.com/in/gongfan-fang-4667ab243">{% include contact_icon.html name="linkedin" %}LinkedIn</a>
+      </nav>
+    </div>
+    {% if page.profile.image %}
+    <figure class="intro-portrait">
+      <img src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }} by the ocean at sunset" width="5712" height="4284" fetchpriority="high">
+    </figure>
+    {% endif %}
+  </section>
 
-<!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-            <span class="font-weight-bold">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>
-            <div class="navbar-brand social">
-             {% include social.html %} <a href="https://github.com/VainF">  
+  {% if page.news %}
+  <section class="home-section news-section" id="news" aria-labelledby="news-title">
+    <div class="section-heading">
+      <h2 id="news-title">News</h2>
+    </div>
+    <ul class="news-list">
+      {% assign recent_news = site.news | sort: 'date' | reverse %}
+      {% for item in recent_news limit: site.news_limit %}
+      <li>
+        <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %Y' }}</time>
+        <div>{% if item.inline %}{{ item.content | remove: '<p>' | remove: '</p>' | remove: '☕️ ' | remove: '🍺 ' | remove: '🥤 ' }}{% else %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endif %}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
-</a>
-           </div>
-          </h1>
-           
-          <span class="font-weight-bold">
-          <p class="desc">{{ page.subtitle }}</p>
-          </span>
+  {% if page.selected_papers %}
+  <section class="home-section research-section" id="research" aria-labelledby="research-title">
+    <div class="section-heading">
+      <h2 id="research-title">Selected publications</h2>
+      <a class="section-more" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar <span aria-hidden="true">↗</span></a>
+    </div>
+    {% include selected_papers.html %}
+  </section>
+  {% endif %}
 
-  
-        </header>
-        
-        
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+  <section class="home-section" id="experience" aria-labelledby="experience-title">
+    <div class="section-heading">
+      <h2 id="experience-title">Experience & education</h2>
+    </div>
+    <div class="experience-list">
+      {% for item in site.data.experience %}
+      <div class="experience-entry">
+        <div class="experience-logo">
+          <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }} logo" class="logo-{{ item.id }}" loading="lazy" width="120" height="88">
+        </div>
+        <div class="experience-details">
+          <h3>{{ item.role }}</h3>
+          <a class="experience-organization" href="{{ item.url }}">{{ item.organization }}</a>
+          {% if item.location %}<span class="experience-location">· {{ item.location }}</span>{% endif %}
+          {% if item.advisor %}<p class="experience-note">Advisor: <a href="{{ item.advisor_url }}">{{ item.advisor }}</a></p>{% endif %}
+        </div>
+        <div class="experience-date">{{ item.dates }}{% if item.current %}<span class="current-position">Current</span>{% endif %}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html 
-              path=profile_image_path 
-              class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
-
-          <div class="clearfix">
-            {{ content }}
-          </div>
-          
-
-
-<img
-  style="width:50%;max-width:100%;min-width:400px;height:auto;display:block;"
-  alt="Gongfan's GitHub Stats"
-  src="https://github-stats-extended.vercel.app/api/?username=VainF&show_icons=true&theme=calm&rank_icon=github&include_all_commits=true&custom_title=Gongfan%27s+GitHub+Stats&disable_animations=true"
-/>
-
-
-          <br>
-          <!-- News -->
-          {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
-            {%- include news.html %}
-          {%- endif %}
-          <br>
-    
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
-            <br>
-            <h5>
-            <a href="https://scholar.google.com/citations?user=489YZ_kAAAAJ" target="_blank" style="text-decoration: none;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 533.5 544.3" style="vertical-align: middle; margin-left: 4px;margin-bottom: 5px;">
-                <path fill="#4285F4" d="M533.5 278.4c0-17.4-1.6-34.1-4.7-50.4H272v95.4h147c-6.4 34.7-25.7 64-54.6 83.6v68h88.2c51.6-47.6 80.9-117.8 80.9-196.6z"/>
-                <path fill="#34A853" d="M272 544.3c73.6 0 135.4-24.3 180.5-66.1l-88.2-68c-24.5 16.4-55.8 26-92.3 26-71 0-131.1-47.9-152.6-112.1h-91.6v70.3c45.4 89.5 137.8 149.9 244.2 149.9z"/>
-                <path fill="#FBBC05" d="M119.4 324.1c-11.2-33.5-11.2-69.6 0-103.1V150.7h-91.6c-37.6 74.4-37.6 162.4 0 236.8l91.6-63.4z"/>
-                <path fill="#EA4335" d="M272 107.7c39.9 0 75.7 13.7 104 40.7l77.7-77.7C407.4 24.6 345.6 0 272 0 165.6 0 73.2 60.4 27.8 149.9l91.6 70.3C140.9 155.6 201 107.7 272 107.7z"/>
-              </svg>
-              <strong>Google Scholar</strong>
-            </a>
-            </h5>
-
-            {%- include selected_papers.html %}
-          {%- endif %}
-
-          <br>
-
-          <h2> Education </h2>
-          <div>
-          <p><b>2022.07 - 2026.07</b> - Ph.D. in Electrical and Computer Engineering, National University of Singapore. </p>
-          <p><b>2019.09 - 2022.04</b> - M.Eng. in Computer Science, Zhejiang University. </p> 
-          <p><b>2015.09 - 2019.06</b> - B.S. in Computer Science, Zhejiang University. </p>
-          </div>
-
-          <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=c1c0c0&w=300&t=tt&d=ajzzMV1bChUR2VYchA2OBejYFKvxwA2Gpx-f6mNp0iw&co=ffffff&cmo=cb8383&cmn=7f2121&ct=020202'></script>
-          <!-- Social 
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-              
-            </div>
-          {%- endif %}
-          -->
-        </article>
-
-</div>
+  <div class="visitor-map">
+    <script id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=c1c0c0&amp;w=300&amp;t=tt&amp;d=ajzzMV1bChUR2VYchA2OBejYFKvxwA2Gpx-f6mNp0iw&amp;co=ffffff&amp;cmo=cb8383&amp;cmn=7f2121&amp;ct=020202"></script>
+  </div>
+</article>

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Use the project's Ruby even when the shell still points to macOS system Ruby.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+if command -v rbenv >/dev/null 2>&1; then
+  exec rbenv exec bundle exec jekyll "$@"
+elif [[ -x "$HOME/.rbenv/bin/rbenv" ]]; then
+  exec "$HOME/.rbenv/bin/rbenv" exec bundle exec jekyll "$@"
+else
+  exec bundle exec jekyll "$@"
+fi

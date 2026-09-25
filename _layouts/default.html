@@ -10,15 +10,13 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-
-    <!-- Header -->
-    {%- include header.html %}
+  <body id="top" class="academic-site">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main id="main-content" class="container site-main">
       {{ content }}
-    </div>
+    </main>
 
     <!-- Footer -->
     {%- include footer.html %}

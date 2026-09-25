@@ -1,0 +1,36 @@
+- id: nvidia
+  organization: NVIDIA
+  location: San Francisco Bay Area
+  role: Research Scientist
+  dates: Sep 2026 — Present
+  current: true
+  url: https://www.nvidia.com/
+  logo: /assets/img/logos/nvidia.svg
+
+- id: nus
+  organization: National University of Singapore
+  location: Singapore
+  role: Ph.D. in Electrical and Computer Engineering
+  dates: Jul 2022 — Jul 2026
+  url: https://www.nus.edu.sg/
+  logo: /assets/img/logos/nus.svg
+  advisor: Prof. Xinchao Wang
+  advisor_url: https://sites.google.com/site/sitexinchaowang/
+
+- id: zju
+  organization: Zhejiang University
+  location: Hangzhou, China
+  role: M.Eng. in Computer Science
+  dates: Sep 2019 — Apr 2022
+  url: https://www.zju.edu.cn/english/
+  logo: /assets/img/logos/zju.png
+  advisor: Prof. Mingli Song
+  advisor_url: https://person.zju.edu.cn/en/msong
+
+- id: zju
+  organization: Zhejiang University
+  location: Hangzhou, China
+  role: B.S. in Computer Science
+  dates: Sep 2015 — Jun 2019
+  url: https://www.zju.edu.cn/english/
+  logo: /assets/img/logos/zju.png

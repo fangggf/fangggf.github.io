@@ -33,7 +33,121 @@ body.sticky-bottom-footer {
   }
 }
 
-// TODO: redefine content layout.
+// Post header social icons
+.post-header-social {
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+
+  a {
+    font-size: 1.1rem;
+    margin-right: 0.6rem;
+    color: var(--global-text-color-light);
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Section link (e.g., Google Scholar link under Publications heading)
+.section-link {
+  margin-top: -0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.88rem;
+
+  a.scholar-link {
+    color: var(--global-text-color-light);
+    text-decoration: none;
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Institution list (experience / education)
+.institution-list {
+  margin: 0.4rem 0 1.6rem;
+}
+
+.institution-entry {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.inst-logo-wrap {
+  flex-shrink: 0;
+  width: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inst-img {
+  object-fit: contain;
+}
+
+.inst-img-wide {
+  width: 100%;
+  height: auto;
+  max-height: 26px;
+}
+
+.inst-img-square {
+  width: auto;
+  height: 34px;
+  max-width: 88px;
+}
+
+.inst-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.inst-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.inst-title {
+  font-weight: 600;
+  font-size: 0.93rem;
+  color: var(--global-text-color);
+}
+
+.inst-date {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.inst-org {
+  font-size: 0.86rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.1rem;
+}
+
+.inst-note {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.1rem;
+  font-style: italic;
+
+  a {
+    color: inherit;
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
 
 
 /******************************************************************************

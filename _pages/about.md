@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Research Scientist at NVIDIA | Ph.D. at NUS | BSc & MEng at Zhejiang University
+subtitle: Research Scientist · NVIDIA
 
 profile:
   align: right

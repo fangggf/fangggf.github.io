@@ -1,0 +1,29 @@
+# Jekyll output and caches
+/_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.tweet-cache/
+
+# Local Ruby dependencies (keep Gemfile.lock and .ruby-version tracked)
+/.bundle/
+/vendor/
+
+# Local environment files; keep shareable examples
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Logs and editor files
+*.log
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS metadata
+.DS_Store
+._*
