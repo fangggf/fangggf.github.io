@@ -1,6 +1,7 @@
 // create element for copy button in code blocks
 var codeBlocks = document.querySelectorAll('pre');
 codeBlocks.forEach(function (codeBlock) {
+  if (codeBlock.closest('.citation-panel')) return;
   if (codeBlock.querySelector('pre:not(.lineno)') || codeBlock.querySelector('code')) {
     var copyButton = document.createElement('button');
     copyButton.className = 'copy';
@@ -33,4 +34,35 @@ codeBlocks.forEach(function (codeBlock) {
       }, waitFor);
     });
   }
+});
+
+// Citation panels have a visible toolbar, separate from the code itself.
+document.querySelectorAll('.citation-copy').forEach(function (button) {
+  var resetTimer;
+  button.addEventListener('click', async function () {
+    var panel = button.closest('.citation-panel');
+    var code = panel.querySelector('code');
+    var status = panel.querySelector('.citation-status');
+    clearTimeout(resetTimer);
+    try {
+      await navigator.clipboard.writeText(code.textContent.trim());
+      button.textContent = 'Copied';
+      button.classList.add('is-copied');
+      status.textContent = 'BibTeX citation copied to clipboard.';
+    } catch (error) {
+      var selection = window.getSelection();
+      var range = document.createRange();
+      range.selectNodeContents(code);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      button.textContent = 'Copy manually';
+      button.classList.remove('is-copied');
+      status.textContent = 'Clipboard unavailable. The citation is selected; use your keyboard to copy it.';
+    }
+    resetTimer = setTimeout(function () {
+      button.textContent = 'Copy';
+      button.classList.remove('is-copied');
+      status.textContent = '';
+    }, 3000);
+  });
 });
